@@ -34,17 +34,16 @@ The review focused on Lab User 01 and the information available in the following
 - Registered authentication methods
 - Sign-in authentication details
 
-## 5. Findings and Observations
+## 5. Findings and Remediation
 
-| Control Area | Observation | Recommendation |
-|---|---|---|
-| Privileged Access | Global Administrator role assignments were reviewed. | Apply least privilege and regularly review privileged role assignments. |
-| Directory Roles | No directly assigned directory roles were identified for Lab User 01 in the reviewed view. | Validate access requirements and review role assignments periodically. |
-| Group Membership | Lab User 01 was not a member of any groups in the reviewed view. | Confirm whether group membership is required for the user's responsibilities. |
-| Azure RBAC | No role assignments were found for the selected subscription in the reviewed view. | Review access assignments at relevant subscription and resource scopes. |
-| Enterprise Applications | No application assignments were found for Lab User 01 in the reviewed view. | Confirm application access against business requirements. |
-| Authentication Methods | Microsoft Authenticator was registered on an iPhone. | Review authentication methods periodically and maintain appropriate MFA requirements. |
-| MFA Sign-in Evidence | Sign-in authentication details showed successful MFA completion evidence. | Continue reviewing sign-in logs for suspicious activity and authentication anomalies. |
+| Control Area | Observation | Risk / Impact | Recommended Action |
+|---|---|---|---|
+| Privileged Access | Reviewed Global Administrator assignments. | Excessive administrative privileges could increase the impact of account compromise. | Review privileged role assignments regularly and enforce least privilege. |
+| Directory Roles | No directly assigned directory roles were identified for Lab User 01 in the reviewed view. | Access may be granted through other roles or assignment paths not covered by this review. | Validate effective access and review all relevant role assignments. |
+| Group Membership | No group memberships were identified for Lab User 01 in the reviewed view. | Required or inappropriate access may go unnoticed if group access is not reviewed. | Compare group membership against documented business responsibilities. |
+| Azure RBAC | No role assignments were found for the selected subscription. | Access at other subscriptions, resource groups, or resource scopes was not assessed by this observation. | Review role assignments at all relevant scopes. |
+| Enterprise Applications | No application assignments were found for Lab User 01 in the reviewed view. | Application access may exist through other access mechanisms or remain outside the review scope. | Validate application assignments and access requirements. |
+| Authentication | Microsoft Authenticator was registered, and sign-in evidence showed successful MFA completion. | A registered method and one successful MFA event do not prove MFA is enforced for every sign-in. | Review applicable MFA policies and authentication requirements. |
 
 ## 6. Key Risks and Recommendations
 
