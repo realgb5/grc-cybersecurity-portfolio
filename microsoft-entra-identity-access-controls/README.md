@@ -97,6 +97,12 @@ The absence of assignments in a reviewed view does not establish that no access 
 - Security recommendations and documentation
 - Evidence-based assessment and reporting
 
-## 10. Project Outcome
+## 10. Conclusion
 
-Completed a documented review of identity and access controls in a Microsoft Entra ID lab environment. Recorded observations across directory roles, group memberships, application access, Azure RBAC, and authentication evidence, then developed recommendations to strengthen access governance and security monitoring.
+This hands-on project demonstrated a structured review of identity and access management controls using Microsoft Entra ID. The assessment examined privileged directory roles, group memberships, Azure Role-Based Access Control (RBAC), enterprise application assignments, registered authentication methods, and sign-in evidence.
+
+The review documented the access information available within the lab environment, identified potential access-control risks, and developed recommendations based on least privilege, appropriate administrative access, periodic access reviews, and multifactor authentication (MFA).
+
+This project strengthened practical skills in IAM controls assessment, access governance, evidence documentation, risk identification, and security remediation recommendations.
+
+**Assessment Limitation:** This was a personal learning lab, not a production security audit. Conclusions are limited to the views, permissions, subscription scope, and evidence available during the review.
